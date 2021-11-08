@@ -156,6 +156,19 @@
 <h3 id="解二阶常系数线性微分方程"><a href="#解二阶常系数线性微分方程" class="headerlink" title="解二阶常系数线性微分方程"></a>解二阶常系数线性微分方程</h3><h4 id="经典做法："><a href="#经典做法：" class="headerlink" title="经典做法："></a>经典做法：</h4><h5 id="1：齐次"><a href="#1：齐次" class="headerlink" title="1：齐次"></a>1：齐次</h5><p><img src="https://gitee.com/renewallxr/imageshosting/raw/master/202111041212978.png" alt="AA28F39B85AD8E37F450575C9B27C641"></p>
 <h5 id="2：非齐次"><a href="#2：非齐次" class="headerlink" title="2：非齐次"></a>2：非齐次</h5><p><img src="https://gitee.com/renewallxr/imageshosting/raw/master/202111041212003.PNG" alt="IMG_1340(images/IMG_1340(20211104-004103).PNG)"></p>
 <h4 id="微分算子法："><a href="#微分算子法：" class="headerlink" title="微分算子法："></a>微分算子法：</h4><p><img src="https://gitee.com/renewallxr/imageshosting/raw/master/202111041321063.jpg" alt="屏幕截图 2021-11-04 132107"></p>
+<h3 id="理解在某点微分定义和可微判定的关系"><a href="#理解在某点微分定义和可微判定的关系" class="headerlink" title="理解在某点微分定义和可微判定的关系"></a>理解在某点微分定义和可微判定的关系</h3><h4 id="对于一元函数需要注意的一个点"><a href="#对于一元函数需要注意的一个点" class="headerlink" title="对于一元函数需要注意的一个点"></a>对于一元函数需要注意的一个点</h4><p>如果直接说f(x)=|x|在X=0处不可导，这种东西，随便一个学过高数的都懂，且答非所问。</p>
+<p>微分定义是Δy=A×Δx+ο(Δx)，即</p>
+<p>lim（Δy-A×Δx）/Δx =0 是否成立，Δx→0（后式相同）</p>
+<p>化简上式即 limΔy/Δx-A=0</p>
+<p>由于f(x)=|x| 在x=0处 左导数不等于右导数，所以limΔy/Δx 不存在，</p>
+<p>所以lim（Δy-A×Δx）/Δx不等于0， 即Δy=A×Δx+ο(Δx)不成立</p>
+<p>所以该函数不可微。</p>
+<p>同时我们还可以发现，“一元函数连续不一定可导 ”中的不一定就卡在了导数是否存在上，连续函数该点导数存在，则可微，反之不可微。这也就是 一元函数 可导必可微，的证明过程。</p>
+<h4 id="对于二元函数呢"><a href="#对于二元函数呢" class="headerlink" title="对于二元函数呢"></a>对于二元函数呢</h4><p>对于二元函数就不一样了，偏导可导不可以推出可微，甚至不能推出连续。</p>
+<p>这是为什么呢？这里就要引入重极限这个概念了(x,y同时趋近所得的极限)。在二元函数中连续和可微都是通过重极限来定义的，而偏导这个比较特殊，它是通过一元极限来定义的。就这样从理论上可以这样理解。</p>
+<p>现在从直观点的角度，就是武老师的讲解：</p>
+<p><img src="https://gitee.com/renewallxr/imageshosting/raw/master/202111081327842.jpg" alt="Screenshot_20211108-015829__01"></p>
+<p>从图中可以看出，两偏导分别是某点从横纵两方向的趋近求导，并不能整体的代表十面八方的连续可微的情况。所以偏导存在并不能推出是否连续和可微。</p>
 
         </div>
 
@@ -298,7 +311,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%92%8C%E5%B7%AE%E5%8C%96%E7%A7%AF%E5%85%AC%E5%BC%8F"><span class="nav-number">1.</span> <span class="nav-text">和差化积公式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%A3%E4%BA%8C%E9%98%B6%E5%B8%B8%E7%B3%BB%E6%95%B0%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"><span class="nav-number">2.</span> <span class="nav-text">解二阶常系数线性微分方程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BB%8F%E5%85%B8%E5%81%9A%E6%B3%95%EF%BC%9A"><span class="nav-number">2.1.</span> <span class="nav-text">经典做法：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1%EF%BC%9A%E9%BD%90%E6%AC%A1"><span class="nav-number">2.1.1.</span> <span class="nav-text">1：齐次</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2%EF%BC%9A%E9%9D%9E%E9%BD%90%E6%AC%A1"><span class="nav-number">2.1.2.</span> <span class="nav-text">2：非齐次</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BE%AE%E5%88%86%E7%AE%97%E5%AD%90%E6%B3%95%EF%BC%9A"><span class="nav-number">2.2.</span> <span class="nav-text">微分算子法：</span></a></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%92%8C%E5%B7%AE%E5%8C%96%E7%A7%AF%E5%85%AC%E5%BC%8F"><span class="nav-number">1.</span> <span class="nav-text">和差化积公式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%A3%E4%BA%8C%E9%98%B6%E5%B8%B8%E7%B3%BB%E6%95%B0%E7%BA%BF%E6%80%A7%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"><span class="nav-number">2.</span> <span class="nav-text">解二阶常系数线性微分方程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BB%8F%E5%85%B8%E5%81%9A%E6%B3%95%EF%BC%9A"><span class="nav-number">2.1.</span> <span class="nav-text">经典做法：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1%EF%BC%9A%E9%BD%90%E6%AC%A1"><span class="nav-number">2.1.1.</span> <span class="nav-text">1：齐次</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2%EF%BC%9A%E9%9D%9E%E9%BD%90%E6%AC%A1"><span class="nav-number">2.1.2.</span> <span class="nav-text">2：非齐次</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BE%AE%E5%88%86%E7%AE%97%E5%AD%90%E6%B3%95%EF%BC%9A"><span class="nav-number">2.2.</span> <span class="nav-text">微分算子法：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%90%86%E8%A7%A3%E5%9C%A8%E6%9F%90%E7%82%B9%E5%BE%AE%E5%88%86%E5%AE%9A%E4%B9%89%E5%92%8C%E5%8F%AF%E5%BE%AE%E5%88%A4%E5%AE%9A%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="nav-number">3.</span> <span class="nav-text">理解在某点微分定义和可微判定的关系</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AF%B9%E4%BA%8E%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E9%9C%80%E8%A6%81%E6%B3%A8%E6%84%8F%E7%9A%84%E4%B8%80%E4%B8%AA%E7%82%B9"><span class="nav-number">3.1.</span> <span class="nav-text">对于一元函数需要注意的一个点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AF%B9%E4%BA%8E%E4%BA%8C%E5%85%83%E5%87%BD%E6%95%B0%E5%91%A2"><span class="nav-number">3.2.</span> <span class="nav-text">对于二元函数呢</span></a></li></ol></li></ol>
     </div>
 </div>
         </aside>
