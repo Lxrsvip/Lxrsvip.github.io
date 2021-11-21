@@ -155,9 +155,9 @@
 
 <h5 id="2-上传文章的最完美代码组："><a href="#2-上传文章的最完美代码组：" class="headerlink" title="2.上传文章的最完美代码组："></a>2.上传文章的最完美代码组：</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo s</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
-<h5 id="3-关于PicGo配置gitee图床上传图片失败的问题"><a href="#3-关于PicGo配置gitee图床上传图片失败的问题" class="headerlink" title="3.关于PicGo配置gitee图床上传图片失败的问题"></a>3.关于PicGo配置gitee图床上传图片失败的问题</h5><p>最近上传图片突然失败，网上搜了很多解决方法，一般都是一些因为配置不当导致的上传失败的情况。经过逐一排除，发现我这并不是因为配置不当所导致的。正当我陷入绝望之时，我做了这两个操作，一个是重装了一下gitee插件：<img src="https://i.loli.net/2021/11/21/1XnBUmIMC7OShAe.png" alt="image-20211121192804870"></p>
+<h5 id="3-关于PicGo配置gitee图床上传图片失败的问题"><a href="#3-关于PicGo配置gitee图床上传图片失败的问题" class="headerlink" title="3.关于PicGo配置gitee图床上传图片失败的问题"></a>3.关于PicGo配置gitee图床上传图片失败的问题</h5><p>最近上传图片突然失败，网上搜了很多解决方法，一般都是一些因为配置不当导致的上传失败的情况。经过逐一排除，发现我这并不是因为配置不当所导致的。正当我陷入绝望之时，我做了这两个操作，一个是重装了一下gitee插件：<img src="https://gitee.com/renewallxr/imageshosting/raw/master/image/image-20211121203056925.png" alt="image-20211121203056925"></p>
 <p>结果仍是收效甚微；下一个就是反反复复看了下PicGo报错日志，显示上传失败的原因是一堆gitee官网的html页面代码（当时没截图），网上找了半天也没看到这类情况的博文，到最后实在没办法，加上看到报错日志乱糟糟的，索性ctrl a全给删除了，后面验证图片上传时，竟然出乎意料的成功了…兴许之余也是一脸懵逼的，以我小白的认知。按理来说，这和日志文件有啥子关系嘛？不过也可能是重装插件后来生效了吧，不是很肯定。但后来就是通过这一流程完美解决了，所以简单记录一下，下次再遇到类似的情况也好借鉴。</p>
-<p><img src="https://i.loli.net/2021/11/21/We2JNDIzRcqatH3.png" alt="image-20211121194306933"></p>
+<p><img src="images/image-20211121203304831.png" alt="image-20211121203304831"></p>
 <p>这就是最后被我删的一干二净，然后重新验证上传后的日志文件…</p>
 
         </div>
